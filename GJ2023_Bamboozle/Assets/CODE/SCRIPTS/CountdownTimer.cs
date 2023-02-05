@@ -29,11 +29,11 @@ public class CountdownTimer : MonoBehaviour
         {
             timeRemaining = 0;
             timerIsRunning = false;
-            SceneManager.LoadScene("LoseScene");
+            SceneManager.LoadScene("LoseScreen");
         }
 
         if (timeRemaining >= maxTime)
-            SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene("WinScreen");
 
         UprootBarFill();
     }
