@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FileBehaviour : MonoBehaviour
 {
-    
     public bool isUseful;
     public bool isGrabbingFile;
     public int fileCategory;
@@ -12,6 +11,10 @@ public class FileBehaviour : MonoBehaviour
     [SerializeField]
     float timeFluctuation;
     public GameObject gameManager;
+
+    [SerializeField]
+    Texture[] textures;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,55 +29,55 @@ public class FileBehaviour : MonoBehaviour
             case 1:
             if(isUseful)
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(0, 2)];
                 }
             else
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(2, 4)];
                 }
             break;
 
             case 2:
                 if (isUseful)
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(4, 6)];
                 }
                 else
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(6, 8)];
                 }
                 break;
 
             case 3:
                 if (isUseful)
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(8, 10)];
                 }
                 else
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(10, 12)];
                 }
                 break;
 
             case 4:
                 if (isUseful)
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(12, 14)];
                 }
                 else
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(14, 16)];
                 }
                 break;
 
             case 5:
                 if (isUseful)
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(16, 18)];
                 }
                 else
                 {
-
+                    gameObject.GetComponent<Renderer>().material.mainTexture = textures[Random.Range(18, 20)];
                 }
                 break;
         }
@@ -85,6 +88,7 @@ public class FileBehaviour : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(1))
         {
+            //Audio de soltar File (no en folder)
             gameManager.GetComponent<ShowCursor>().CursorUpdate(false);
             if(!insideFolder)
             isGrabbingFile = false;
@@ -106,6 +110,7 @@ public class FileBehaviour : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(1))
         {
+            //Audio de Agarrar File
             gameManager.GetComponent<ShowCursor>().CursorUpdate(true);
             isGrabbingFile=true;
         }
@@ -113,6 +118,7 @@ public class FileBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
+        //Audio de Disparar
         FileDelete();
     }
 
@@ -120,12 +126,12 @@ public class FileBehaviour : MonoBehaviour
     {
         if (isUseful)
         {
-            gameManager.GetComponent<CountdownTimer>().timeRemaining += timeFluctuation;
+            gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
             Destroy(gameObject);
         }
         else if (!isUseful)
         {
-            gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
+            gameManager.GetComponent<CountdownTimer>().timeRemaining += timeFluctuation;
             Destroy(gameObject);
         }
     }

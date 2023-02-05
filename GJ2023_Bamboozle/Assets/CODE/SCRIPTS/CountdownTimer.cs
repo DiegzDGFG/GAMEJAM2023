@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -28,7 +29,11 @@ public class CountdownTimer : MonoBehaviour
         {
             timeRemaining = 0;
             timerIsRunning = false;
+            SceneManager.LoadScene("LoseScene");
         }
+
+        if (timeRemaining >= maxTime)
+            SceneManager.LoadScene("WinScene");
 
         UprootBarFill();
     }

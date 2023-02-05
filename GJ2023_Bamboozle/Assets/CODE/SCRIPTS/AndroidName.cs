@@ -7,7 +7,7 @@ public class AndroidName : MonoBehaviour
     string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string randomCharacters;
     int randomNumbers;
-    string androidName;
+    public string androidName;
     // Start is called before the first frame update
     void Start()
     {

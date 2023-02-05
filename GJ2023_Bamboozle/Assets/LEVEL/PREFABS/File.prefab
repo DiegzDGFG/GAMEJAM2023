@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4073620675263377050}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 960, y: 540, z: 15}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b59fd608a0f08e443afcade8d30c62f0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,8 +102,29 @@ MonoBehaviour:
   isGrabbingFile: 0
   fileCategory: 0
   insideFolder: 0
-  timeFluctuation: 1
+  timeFluctuation: 5
   gameManager: {fileID: 0}
+  textures:
+  - {fileID: 2800000, guid: 487a9426795fc57409c177a10aac124c, type: 3}
+  - {fileID: 2800000, guid: e279100dfde0e804a82ec6f616e63efc, type: 3}
+  - {fileID: 2800000, guid: dfb8d060dca3dca4eab63fcca931f41e, type: 3}
+  - {fileID: 2800000, guid: c041ebc1aad8db04283abdca3de6c88c, type: 3}
+  - {fileID: 2800000, guid: a41e9786dd5a6684eb835fbb66129e6c, type: 3}
+  - {fileID: 2800000, guid: 589ec5cd8a470664e90b43c7b2ce115a, type: 3}
+  - {fileID: 2800000, guid: bfab0bdd6cd7bb34095d2f85a7f60cb2, type: 3}
+  - {fileID: 2800000, guid: 85807d25c1725a8459ae731dd7fac5e6, type: 3}
+  - {fileID: 2800000, guid: f80dc3ecae730bc47933d6a914fa14ba, type: 3}
+  - {fileID: 2800000, guid: cfb7be7e2858f3149b1c1edfbe4d642e, type: 3}
+  - {fileID: 2800000, guid: 93c53b2058231ea4ea57f6f03321ed04, type: 3}
+  - {fileID: 2800000, guid: 7ab0c151511c61040a38179b43ccf32c, type: 3}
+  - {fileID: 2800000, guid: a9b6dde6f61d4274b828d565a1d33606, type: 3}
+  - {fileID: 2800000, guid: 5dfb15b6c21d9ec4e9a7f2d912886427, type: 3}
+  - {fileID: 2800000, guid: 25e91e34ea7be274cbafc57dd6a0fc7b, type: 3}
+  - {fileID: 2800000, guid: c2a298a8f01833a4b8da7beb005321fe, type: 3}
+  - {fileID: 2800000, guid: 759c1fe7fe4464149af013e8ba452654, type: 3}
+  - {fileID: 2800000, guid: 6de41849364242c4db2ce9a3222f1b14, type: 3}
+  - {fileID: 2800000, guid: df66d494e829d5a4aadabb47ed5a0b6d, type: 3}
+  - {fileID: 2800000, guid: 9185a8d90f84605448a2f5ad45052bdc, type: 3}
 --- !u!65 &-4037105655628325990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -131,8 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveSpeed: 2
   bonusHeight: 1
-  timeFluctuation: 1
+  timeFluctuation: 5
   gameManager: {fileID: 0}
   countdownForLeaving: 8
-  maxMoveSpeed: 2
+  maxMoveSpeed: 1.5
   minMoveSpeed: 0.7

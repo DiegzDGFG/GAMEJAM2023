@@ -54,6 +54,7 @@ public class FileMovement : MonoBehaviour
              {
 
                  gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
+                //Audio de Se Escapa File
                  Destroy(gameObject);
 
              }
