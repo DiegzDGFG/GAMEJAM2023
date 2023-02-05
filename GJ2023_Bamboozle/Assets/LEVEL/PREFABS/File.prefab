@@ -168,9 +168,9 @@ MonoBehaviour:
   timeFluctuation: 3
   gameManager: {fileID: 0}
   audioSource: {fileID: 0}
-  countdownForLeaving: 8
-  maxMoveSpeed: 0.8
-  minMoveSpeed: 0.6
+  countdownForLeaving: 6
+  maxMoveSpeed: 3.9
+  minMoveSpeed: 2.1
 --- !u!114 &1299697602261987098
 MonoBehaviour:
   m_ObjectHideFlags: 0

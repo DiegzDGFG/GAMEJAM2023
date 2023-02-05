@@ -44,7 +44,7 @@ public class FolderBehaviour : MonoBehaviour
             
                 Destroy(fileOnTop);
             }
-            else if (Input.GetMouseButtonUp(1) && fileOnTop.GetComponent<FileBehaviour>().isUseful == false && fileOnTop.GetComponent<FileBehaviour>().insideFolder)
+            else if (Input.GetMouseButtonUp(1) && fileOnTop.GetComponent<FileBehaviour>().isUseful == false && fileOnTop.GetComponent<FileBehaviour>().insideFolder || Input.GetMouseButtonUp(1) && fileOnTop.GetComponent<FileBehaviour>().isUseful && fileOnTop.GetComponent<FileBehaviour>().insideFolder && fileOnTop.GetComponent<FileBehaviour>().fileCategory != folderCategory)
             {
                 //Audio de Dropear File en Folder (Incorrecto)
                 gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(2, 5)];
