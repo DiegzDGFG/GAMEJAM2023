@@ -14,8 +14,11 @@ public class PulseImage : MonoBehaviour
 
     void Update()
     {
-        t += Time.deltaTime * pulseSpeed;
-        float alpha = Mathf.Lerp(minAlpha, maxAlpha, Mathf.Sin(t));
-        rawImage.color = new Color(rawImage.color.r, rawImage.color.g, rawImage.color.b, alpha);
+        if (rawImage != null)
+        {
+            t += Time.deltaTime * pulseSpeed;
+            float alpha = Mathf.Lerp(minAlpha, maxAlpha, Mathf.Sin(t));
+            rawImage.color = new Color(rawImage.color.r, rawImage.color.g, rawImage.color.b, alpha);
+        }
     }
 }

@@ -21,6 +21,7 @@ public class FadeInScript : MonoBehaviour
         while (alpha < 1f)
         {
             alpha += fadeInSpeed * Time.deltaTime;
+            if(textMeshPro!=null)
             textMeshPro.color = new Color(textMeshPro.color.r, textMeshPro.color.g, textMeshPro.color.b, alpha);
             yield return null;
         }

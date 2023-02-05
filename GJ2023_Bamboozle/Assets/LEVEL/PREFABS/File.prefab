@@ -103,7 +103,7 @@ MonoBehaviour:
   isGrabbingFile: 0
   fileCategory: 0
   insideFolder: 0
-  timeFluctuation: 5
+  timeFluctuation: 3
   gameManager: {fileID: 0}
   textures:
   - {fileID: 2800000, guid: 487a9426795fc57409c177a10aac124c, type: 3}
@@ -126,6 +126,12 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 6de41849364242c4db2ce9a3222f1b14, type: 3}
   - {fileID: 2800000, guid: df66d494e829d5a4aadabb47ed5a0b6d, type: 3}
   - {fileID: 2800000, guid: 9185a8d90f84605448a2f5ad45052bdc, type: 3}
+  audios:
+  - {fileID: 8300000, guid: 7b0aca5afcac620489e1ea3b8e4de047, type: 3}
+  - {fileID: 8300000, guid: 5eab4f71df394ed44979570a9da220e6, type: 3}
+  - {fileID: 8300000, guid: 20c3f55bf434d0348be1151e150895a5, type: 3}
+  - {fileID: 8300000, guid: 069aee49dd78feb40a5e11ef9e0e1ee4, type: 3}
+  - {fileID: 8300000, guid: 3231cee97af471246b9b0a974d06e217, type: 3}
 --- !u!65 &-4037105655628325990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -151,9 +157,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cc1369698e87a4691013bbdb8127ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audios:
+  - {fileID: 8300000, guid: 7b0aca5afcac620489e1ea3b8e4de047, type: 3}
+  - {fileID: 8300000, guid: 5eab4f71df394ed44979570a9da220e6, type: 3}
+  - {fileID: 8300000, guid: 3231cee97af471246b9b0a974d06e217, type: 3}
+  - {fileID: 8300000, guid: 069aee49dd78feb40a5e11ef9e0e1ee4, type: 3}
+  - {fileID: 8300000, guid: 20c3f55bf434d0348be1151e150895a5, type: 3}
   waveSpeed: 2
   bonusHeight: 1
-  timeFluctuation: 5
+  timeFluctuation: 3
   gameManager: {fileID: 0}
   audioSource: {fileID: 0}
   countdownForLeaving: 8

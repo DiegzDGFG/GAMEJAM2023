@@ -7,6 +7,9 @@ public class FolderBehaviour : MonoBehaviour
     [SerializeField]
     Texture[] textures;
 
+    [SerializeField]
+    AudioClip[] audios;
+
     public GameObject gameManager;
     public int folderCategory;
     public float timeFluctuation;
@@ -31,21 +34,27 @@ public class FolderBehaviour : MonoBehaviour
             if (Input.GetMouseButtonUp(1) && fileOnTop.GetComponent<FileBehaviour>().fileCategory == folderCategory && fileOnTop.GetComponent<FileBehaviour>().isUseful && fileOnTop.GetComponent<FileBehaviour>().insideFolder)
             {
                 //Audio de Dropear File en Folder (Correcto)
+                gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(0,2)];
+                gameManager.GetComponent<AudioSource>().Play();
                 gameManager.GetComponent<ShowCursor>().CursorUpdate(false);
                 gameManager.GetComponent<CountdownTimer>().timeRemaining += timeFluctuation;
                 fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile = false;
                 fileOnTop.GetComponent<FileBehaviour>().insideFolder = false;
                 isGrowing = false;
+            
                 Destroy(fileOnTop);
             }
             else if (Input.GetMouseButtonUp(1) && fileOnTop.GetComponent<FileBehaviour>().isUseful == false && fileOnTop.GetComponent<FileBehaviour>().insideFolder)
             {
                 //Audio de Dropear File en Folder (Incorrecto)
+                gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(2, 5)];
+                gameManager.GetComponent<AudioSource>().Play();
                 gameManager.GetComponent<ShowCursor>().CursorUpdate(false);
                 gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
                 fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile = false;
                 fileOnTop.GetComponent<FileBehaviour>().insideFolder = false;
                 isGrowing = false;
+               
                 Destroy(fileOnTop);
             }
         }
@@ -61,6 +70,7 @@ public class FolderBehaviour : MonoBehaviour
         fileOnTop.GetComponent<FileBehaviour>().insideFolder = true;
         if(fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile==true)
         isGrowing = true;
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -70,7 +80,10 @@ public class FolderBehaviour : MonoBehaviour
         fileOnTop.GetComponent<FileBehaviour>().insideFolder = false;
         if (fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile == true)
             isGrowing = false;
+        fileOnTop = null;
     }
+
+    
 
     void GrowFolder()
     {

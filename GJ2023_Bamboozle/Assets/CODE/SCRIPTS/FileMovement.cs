@@ -7,6 +7,10 @@ using UnityEngine;
 
 public class FileMovement : MonoBehaviour
 {
+
+    [SerializeField]
+    AudioClip[] audios;
+
     private float cycle;
     private Vector3 basePosition;
 
@@ -64,8 +68,9 @@ public class FileMovement : MonoBehaviour
 
                  gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
                 //Audio de Se Escapa File
-            
-                 Destroy(gameObject);
+                gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(2, 5)];
+                gameManager.GetComponent<AudioSource>().Play();
+                Destroy(gameObject);
                  
 
              }

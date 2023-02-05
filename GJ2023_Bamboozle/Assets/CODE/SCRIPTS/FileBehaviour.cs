@@ -15,6 +15,9 @@ public class FileBehaviour : MonoBehaviour
     [SerializeField]
     Texture[] textures;
 
+    [SerializeField]
+    AudioClip[] audios;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -126,11 +129,17 @@ public class FileBehaviour : MonoBehaviour
     {
         if (isUseful)
         {
+            gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(2, 5)];
+            gameManager.GetComponent<AudioSource>().Play();
+            gameManager.GetComponent<AudioSource>().Play();
             gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
             Destroy(gameObject);
         }
         else if (!isUseful)
         {
+            gameManager.GetComponent<AudioSource>().clip = audios[Random.Range(0, 2)];
+            
+            gameManager.GetComponent<AudioSource>().Play();
             gameManager.GetComponent<CountdownTimer>().timeRemaining += timeFluctuation;
             Destroy(gameObject);
         }
