@@ -197,7 +197,7 @@ MonoBehaviour:
     your corrupted brothers. Go and be the hero we need. \n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -351,7 +351,7 @@ MonoBehaviour:
     \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_text: "Godspeed, \niD-LY Corp.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -655,7 +655,7 @@ MonoBehaviour:
     in the OS. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -978,7 +978,7 @@ MonoBehaviour:
     western world. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1132,7 +1132,7 @@ MonoBehaviour:
     must not let them turn and awake the rest. \r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_text: Press SPACE to Skip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1581,7 +1581,7 @@ MonoBehaviour:
   m_text: "This process is also known as \nUP - ROOTING\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
-  m_sharedMaterial: {fileID: 7343426626145061183, guid: e1633b9c3cb57164380718415c0eb64b, type: 2}
+  m_sharedMaterial: {fileID: -5684805220871693467, guid: 418bc08ab7ce505498355536dc01f80c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

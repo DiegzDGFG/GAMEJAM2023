@@ -574,8 +574,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281731327
-  m_fontColor: {r: 1, g: 0.033018887, b: 0.21073593, a: 1}
+    rgba: 4294947689
+  m_fontColor: {r: 0.41037738, g: 0.70275223, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -916,7 +916,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -3560058525403340120, guid: e9783e74e1d7db94caaeece5542a348d, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 5214ad4607a55c04aa0931f833fa34fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 13f102b46053f8040a8c352e2014a5e2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2441,8 +2441,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281731327
-  m_fontColor: {r: 1, g: 0.033018887, b: 0.21073593, a: 1}
+    rgba: 4294947689
+  m_fontColor: {r: 0.41037738, g: 0.70275223, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3030,8 +3030,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281731327
-  m_fontColor: {r: 1, g: 0.033018887, b: 0.21073593, a: 1}
+    rgba: 4294947689
+  m_fontColor: {r: 0.41037738, g: 0.70275223, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3993,8 +3993,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281731327
-  m_fontColor: {r: 1, g: 0.033018887, b: 0.21073593, a: 1}
+    rgba: 4294947689
+  m_fontColor: {r: 0.41037738, g: 0.70275223, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4571,7 +4571,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1809649332}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: c50106d584185644db91b33138854f66, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -4594,6 +4594,24 @@ PlayableDirector:
   - key: {fileID: 3398319073392050655, guid: c50106d584185644db91b33138854f66, type: 2}
     value: {fileID: 0}
   - key: {fileID: 2113200787814506917, guid: c50106d584185644db91b33138854f66, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3217549179728560254, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 224838960}
+  - key: {fileID: -7680019529372423085, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 1129188051}
+  - key: {fileID: -2805968373360138549, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 1604844647}
+  - key: {fileID: 5826532529635649903, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 847687095}
+  - key: {fileID: -2710774138557215523, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 6397350740154270736, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4586348549633653763, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 3398319073392050655, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2113200787814506917, guid: f120f4dced0c75446a3762d6ef4ddffb, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
