@@ -155,5 +155,5 @@ MonoBehaviour:
   timeFluctuation: 5
   gameManager: {fileID: 0}
   countdownForLeaving: 8
-  maxMoveSpeed: 0.1
-  minMoveSpeed: 0.1
+  maxMoveSpeed: 0.8
+  minMoveSpeed: 0.6
