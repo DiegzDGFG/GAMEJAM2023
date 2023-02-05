@@ -16,6 +16,15 @@ public class FileMovement : MonoBehaviour
 
     public float timeFluctuation;
     public GameObject gameManager;
+
+   public AudioSource audioSource;
+
+    public void PlayClip(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
     float countdownForPos;
     public float countdownForLeaving;
     float moveSpeed;
@@ -55,7 +64,9 @@ public class FileMovement : MonoBehaviour
 
                  gameManager.GetComponent<CountdownTimer>().timeRemaining -= timeFluctuation;
                 //Audio de Se Escapa File
+            
                  Destroy(gameObject);
+                 
 
              }
          }
