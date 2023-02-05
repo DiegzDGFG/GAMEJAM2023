@@ -15,9 +15,69 @@ public class FileBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(gameManager == null)
+        fileCategory = Random.Range(1, 6);
+        isUseful= (Random.value > 0.5f);
+        if (gameManager == null)
         gameManager = GameObject.FindWithTag("GameManager");
         isGrabbingFile = false;
+
+        switch(fileCategory)
+        {
+            case 1:
+            if(isUseful)
+                {
+
+                }
+            else
+                {
+
+                }
+            break;
+
+            case 2:
+                if (isUseful)
+                {
+
+                }
+                else
+                {
+
+                }
+                break;
+
+            case 3:
+                if (isUseful)
+                {
+
+                }
+                else
+                {
+
+                }
+                break;
+
+            case 4:
+                if (isUseful)
+                {
+
+                }
+                else
+                {
+
+                }
+                break;
+
+            case 5:
+                if (isUseful)
+                {
+
+                }
+                else
+                {
+
+                }
+                break;
+        }
     }
 
     // Update is called once per frame

@@ -49,13 +49,16 @@ public class FolderBehaviour : MonoBehaviour
     {
         fileOnTop = other.gameObject;
         fileOnTop.GetComponent<FileBehaviour>().insideFolder = true;
+        if(fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile==true)
         isGrowing = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        fileOnTop = other.gameObject;
         fileOnTop.GetComponent<FileBehaviour>().insideFolder = false;
-        isGrowing = false;
+        if (fileOnTop.GetComponent<FileBehaviour>().isGrabbingFile == true)
+            isGrowing = false;
     }
 
     void GrowFolder()
